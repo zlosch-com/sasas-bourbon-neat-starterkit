@@ -1,0 +1,66 @@
+@import "neat";
+
+$article-layout-grid: (
+  columns: 1,
+  gutter: 2rem,
+);
+
+$article-layout-grid--tablet-up: (
+  columns: 6,
+  gutter: 2rem,
+  media: "(min-width: 768px)",
+);
+
+.container {
+  @include grid-container;
+}
+
+.grid-thumb {
+  @include grid-column(1, $article-layout-grid);
+  margin-bottom: 2rem;
+
+  @include grid-media($article-layout-grid--tablet-up) {
+    @include grid-column(2);
+    margin-bottom:2rem;
+  }
+
+
+}
+
+.logo {
+  @include grid-column(1, $article-layout-grid);
+
+  @include grid-media($article-layout-grid--tablet-up) {
+    @include grid-column(2);
+  }
+}
+
+.mainnav {
+  @include grid-column(1, $article-layout-grid);
+
+  @include grid-media($article-layout-grid--tablet-up) {
+    @include grid-column(4);
+  }
+}
+
+.article-layout__hero {
+  @include grid-column(1, $article-layout-grid);
+  margin-bottom: 2rem;
+}
+
+.article-layout__sidebar {
+  @include grid-column(1, $article-layout-grid);
+  margin-bottom: 2rem;
+
+  @include grid-media($article-layout-grid--tablet-up) {
+    @include grid-column(2);
+  }
+}
+
+.article-layout__main {
+  @include grid-column(1, $article-layout-grid);
+
+  @include grid-media($article-layout-grid--tablet-up) {
+    @include grid-column(3);
+  }
+}

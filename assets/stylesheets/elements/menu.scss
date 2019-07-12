@@ -1,0 +1,32 @@
+
+header.header-top {
+  position:fixed;
+  width: 100%;
+  border-bottom: 1px solid whitesmoke;
+}
+
+nav.mainnav {
+  ul {
+    text-align: right;
+  }
+}
+
+li.menitem {
+  display: inline;
+  a {
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.logo {
+  padding:20px 0;
+  .logolink {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    }
+  }
